@@ -1,2 +1,4 @@
-# classfile-project-template
-A template for starting a new Class File Project
+$PROJECT_NAME
+======
+
+Congrats! This is a new project to implement a new Class File.

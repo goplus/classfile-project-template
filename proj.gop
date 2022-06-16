@@ -1,0 +1,12 @@
+// Proj is project class of this ClassFile project.
+type Proj struct {
+}
+
+// Gopt_Proj_Main is main entry of this ClassFile project.
+func Gopt_Proj_Main(proj any) {
+	// you can do some initialization here:
+	// ...
+
+	// call MainEntry of user code:
+	proj.(interface{ MainEntry() }).MainEntry()
+}
