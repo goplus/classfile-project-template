@@ -1,11 +1,21 @@
+// user-defined project should implements:
+type projObj interface {
+	initProj()
+	MainEntry()
+}
+
 // Proj is project class of this ClassFile project.
 type Proj struct {
 }
 
-// Gopt_Proj_Main is main entry of this ClassFile project.
-func Gopt_Proj_Main(proj any) {
+func (p *Proj) initProj() {
 	// you can do some initialization here:
 	// ...
+}
+
+// Gopt_Proj_Main is main entry of this ClassFile project.
+func Gopt_Proj_Main(proj projObj) {
+	proj.initProj()
 
 	// call MainEntry of user code:
 	proj.(interface{ MainEntry() }).MainEntry()
