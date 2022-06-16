@@ -15,8 +15,6 @@ func (p *Proj) initProj() {
 
 // Gopt_Proj_Main is main entry of this ClassFile project.
 func Gopt_Proj_Main(proj projObj) {
-	proj.initProj()
-
-	// call MainEntry of user code:
-	proj.(interface{ MainEntry() }).MainEntry()
+	proj.initProj
+	proj.MainEntry // call MainEntry of user code
 }
