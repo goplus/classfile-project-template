@@ -1,4 +1,4 @@
-module github.com/goplus/classfile-project-template
+module $ModulePath
 
 go 1.16
 
