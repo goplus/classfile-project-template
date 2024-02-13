@@ -1,0 +1,25 @@
+package ModulePath
+
+// App is project class of this clasfile.
+type App struct {
+}
+
+func (p *App) initApp() {
+	// you can do some initialization here:
+	// ...
+}
+
+// Gopt_App_Main is main entry of this classfile.
+// Parameter works is optional. If there is no worker class, remove it.
+func Gopt_App_Main(a interface{ initApp() }, works ...interface{ initWork() }) {
+	a.initApp
+	if app, ok := a.(interface{ MainEntry() }); ok {
+		app.mainEntry
+	}
+	for _, w := range works {
+		w.initWork
+		if work, ok := w.(interface{ Main() }); ok {
+			work.main
+		}
+	}
+}

@@ -1,5 +1,12 @@
-// Work is work class of this ClassFile project.
+package ModulePath
+
+// Work is worker class of this classfile.
 // If you don't need a work calss, delete `work.gop` file from
-// this project and set `$WorkExt` to "" in `gop.mod` file.
+// this project and remove `class statement` in `gop.mod` file.
 type Work struct {
+}
+
+func (p *Work) initWork() {
+	// you can do some initialization here:
+	// ...
 }

@@ -1,7 +1,5 @@
-module $ModulePath
+gop 1.2
 
-go 1.16
+project _$Class.gox App ModulePath
 
-gop 1.1
-
-classfile $ProjExt $WorkExt $ClassFilePkgPath
+class _$Class.gox Work
